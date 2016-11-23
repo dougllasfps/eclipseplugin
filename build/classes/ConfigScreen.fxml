@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="50.0" minWidth="50.0" prefHeight="570.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dougllas.classgenerator.ui.ConfigScreenController">
+  <children>
+    <TabPane layoutX="35.0" layoutY="97.0" prefHeight="371.0" prefWidth="546.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab styleClass="panel-heading" text="Configuração Do Projeto">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="359.0" prefWidth="387.0">
+              <children>
+                <GridPane layoutX="29.0" layoutY="57.0" prefHeight="206.0" prefWidth="488.0">
+                  <children>
+                    <Label text="Group Id:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <Label text="Artifact Id:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <Label text="Model Package:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <Label text="Repository Package:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <Label prefHeight="39.0" text="Service Package:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <Label text="LazyDataModel Package:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                    <Label text="FormAndList Package:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                    <TextField fx:id="inputGroupId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <TextField fx:id="inputArtifactId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <TextField fx:id="inputModelPackage" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <TextField fx:id="inputRepositoryPackage" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    <TextField fx:id="inputServicePackage" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                    <TextField fx:id="inputLDMPack" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                    <TextField fx:id="inputFormAndListPackage" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label text="Projeto:" />
+                              <ComboBox fx:id="comboProjetos" prefHeight="26.0" prefWidth="327.0" GridPane.columnIndex="1" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="163.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="325.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab styleClass="panel-heading" text="Configuração do Modelo">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <GridPane layoutX="14.0" layoutY="14.0" prefHeight="284.0000999999975" prefWidth="518.0">
+                  <children>
+                    <Label text="Class:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                    <TextField fx:id="inputClassName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                    <Label text="Repository:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    <Label text="Service:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                    <Label text="LazyDataModel:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                    <Label text="ListBean:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                    <Label text="FormBean:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                    <CheckBox fx:id="checkRep" mnemonicParsing="false" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <CheckBox fx:id="checkService" mnemonicParsing="false" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    <CheckBox fx:id="checkLDM" mnemonicParsing="false" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    <CheckBox fx:id="checkList" mnemonicParsing="false" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    <CheckBox fx:id="checkForm" mnemonicParsing="false" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  </children>
+                  <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="124.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="394.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                </GridPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button layoutX="35.0" layoutY="479.0" mnemonicParsing="false" onAction="#action" prefHeight="36.0" prefWidth="99.0" styleClass="btn, btn-success" text="Criar" />
+    <ImageView fitHeight="77.25" fitWidth="103.0" layoutX="35.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@brasao.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="109.0" layoutY="30.0" styleClass="h1" text="Seduc Class" />
+  </children>
+  <stylesheets>
+    <URL value="@bootstrapfx.css" />
+  </stylesheets>
+</AnchorPane>

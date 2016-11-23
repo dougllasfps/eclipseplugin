@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SeducPlugin
+Bundle-SymbolicName: SeducPlugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: 
+ org.eclipse.ui,
+ org.eclipse.core.resources,
+ org.eclipse.core.runtime,
+ org.eclipse.fx.ui.workbench3,
+ org.eclipse.e4.ui.workbench,
+ org.eclipse.e4.ui.widgets;bundle-version="1.1.100",
+ org.eclipse.fx.ide.css.jfx8;bundle-version="2.1.0",
+ org.eclipse.e4.ui.workbench.swt;bundle-version="0.14.0",
+ org.eclipse.e4.ui.workbench.addons.swt;bundle-version="1.2.100",
+ org.eclipse.e4.ui.css.swt;bundle-version="0.12.100",
+ org.eclipse.e4.ui.workbench.renderers.swt;bundle-version="0.14.0",
+ org.eclipse.e4.ui.css.swt.theme;bundle-version="0.10.100",
+ org.eclipse.sapphire.ui.swt.gef;bundle-version="9.0.5",
+ org.eclipse.sapphire.ui.swt.xml.editor;bundle-version="9.0.5"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: jfxswt.jar,
+ .
+
